@@ -1,0 +1,16 @@
+---
+- name: restart httpd 
+  ansible.builtin.service:
+      name: httpd 
+      state: restarted
+
+- name: restart firewalld 
+  ansible.builtin.service:
+      name: firewalld 
+      state: restarted
+
+- name: restart jenkins 
+  ansible.builtin.service:
+      name: jenkins
+      state: restarted
+
